@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+        url("https://st4.depositphotos.com/10839834/21083/v/450/depositphotos_210836720-stock-illustration-streaming-binary-code-background-cyber.jpg");
+}
+nav {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+nav h1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 100;
+    font-size: 30px;
+    color: rgb(0, 255, 0);
+}
+header {
+    text-align: center;
+    padding:80px 30px;
+    border-bottom: 2px dashed rgb(0, 255, 0);
+}
+header h1 {
+    color: #0f0;
+    font-weight: 200;
+}
+header h2 {
+    color: rgb(33, 114, 33);
+    font-weight: bold;
+}
+header a {
+    display: block;
+    color: red;
+    width: fit-content;
+    font-size: 18px;
+    margin: 20px auto 0;
+    padding: 10px;
+    text-decoration: none;
+}
+header a span {
+    display: none;
+}
+header a:hover span {
+    display: inline;
+}
+header img {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #0F0;
+    margin-bottom: 10px;
+}
+section {
+    color: #0F0;
+    width: 900px;
+    margin: 100px auto;
+}
+section h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+section#about p {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+}
+
+section#certificates ul {
+    list-style-type: square;
+    margin: 30px 0 0 40px;
+}
+section#certificates ul li {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+}
+section#projects div {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+section#projects div a.project {
+    text-decoration: none;
+    display: block;
+    color: rgb(196, 196, 196);
+    border: 2px dashed rgb(196, 196, 196);
+    padding: 20px 40px;
+
+}
+section#projects div a.project:hover {
+    color: red;
+    border: 2px dashed red;
+}
+section#contact p {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+}
+section#contact ul {
+    list-style-type: square;
+    margin: 30px 0 0 40px;
+}
+section#contact ul li {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+}
+section#contact ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+p#copyright {
+    text-align: center;
+    color: #0f0;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 90%;
+    }
+}
+@media (max-width: 800px) {
+    
+    section#projects div {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    section#about p, section#contact ul li, section#contact p  {
+        font-size: 17px;
+    }
+    
+    section h1 {
+        font-size: 30px;
+    }
+
+}
